@@ -1,0 +1,96 @@
+body {
+	 background-image: url("background.gif");
+}
+
+div#container {
+	border-style: solid;
+	border-width: 10px;
+	border-color: white;
+	max-width: 1000px;
+	margin-right: 10%;
+	margin-left: 10%;
+	background-color: white;
+}
+
+#i {
+	margin-bottom: 75px;
+}
+
+div#big-section {
+	
+}
+
+h2 {
+	clear: both;
+}
+
+span.date {
+	border-bottom-color: #5FA0DB;
+	border-bottom-style: dashed;
+	border-bottom-width: 2px;
+}
+
+img.right-image {
+	float:right;
+}
+
+div#spatulas {
+	border-color: #C2E9E9;
+	border-style: solid;
+	border-width: thick;
+	border-radius: 15px;
+	background-color: #E8FBFB;
+	padding: 5px;
+	margin-top: 10px;
+	clear: right;
+	overflow: auto;
+	text-align: justify;
+}
+
+div#cookie {
+	border-color: #C2E9E9;
+	border-style: solid;
+	border-width: thick;
+	border-radius: 15px;
+	background-color: #E8FBFB;
+	padding: 5px;
+	margin-top: 10px;
+	clear: right;
+	overflow: auto;
+	text-align: justify;
+	margin-bottom:5px;
+}
+
+p {
+	text-align: justify;
+}
+
+h2#initial-h2 {
+	text-align: right;
+	width: 100%;
+	font-size:14pt;
+	float: right;
+	background-color: #E8FBFB;
+	margin-top: 0px;
+	background-color: #A8F0F0
+}
+
+h1#initial-h1 {
+	text-align: right;
+	width: 100%;
+	float: right;
+	background-color: #E8FBFB;
+	margin-bottom: 0px;
+	background-color: #A8F0F0;
+}
+
+div#friends {
+	float: left;
+	border-style: solid;
+	border-color: #5EB6C6;
+	border-radius: 15px;
+	margin-right: 10px;
+	background-color: #CFFFED;
+	width:15%;
+	overflow: hidden;
+}

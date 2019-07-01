@@ -9,7 +9,7 @@
 <div id="container">
 <h1> Shopping Cart </h1>
 
-<form action="shopping-cart.php" method="post">
+<form action="shopping-cart.php" method="post" autocomplete>
 <h3> Personal Details </h3>
 <label>First name: <input type="text" name="firstname" size="35" required/></label>
 <br/>
@@ -17,7 +17,7 @@
 <label>Last name: <input type="text" name="lastname" size="35" required/></label>
 <br/>
 <br/>
-<label>Phone number: <input type="tel" name="phone" size="35" required/></label>
+<label>Phone number: <input type="tel" name="phone" size="35" placeholder ="10 to 13 digits" pattern="\d{10,13}" required/></label>
 <br/>
 <br/>
 <label>Email: <input type="text" name="email" placeholder="example: johnstockholm@gmail.com" size="35" required/></label>
@@ -34,6 +34,7 @@
   <label> <input type="radio" name="card-type" value="debit"> Debit </label>
 </fieldset>
 <br/>
+<br/>
 <fieldset>
   <legend> Card provider: </legend>
   <label> <input type="radio" name="card-provider" value="visa" checked> Visa </label>
@@ -42,6 +43,7 @@
   <label> <input type="radio" name="card-provider" value="americanexpress"> American Express </label>
   <label> <input type="radio" name="card-provider" value="capitalone"> Capital One </label>
 </fieldset>
+<br/>
 <br/>
 <label>Name on card: <input type="text" name="nameoncard" size="35" required/></label>
 <br/>
@@ -56,10 +58,10 @@
 <label>Billing address: <input type="text" name="billingaddress" size="35" required/></label>
 <br/>
 <br/>
-<label>CVV: <input type="text" name="cvv" placeholder="Example: 725" size="35" required/></label>
+<label id="cvv">CVV: <input type="text" name="cvv" placeholder="Example: 725" size="35" required/></label>
 <br/>
 <h3> Shipping Details </h3>
-<label> State:</label>
+<label id="state"> State:</label>
 <select name="state">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
@@ -115,14 +117,16 @@
 </select>				
 <br/>
 <br/>
-<label>City: <input type="text" name="city" size="35" required/></label>
+<label id="b">City: <input type="text" name="city" size="35" required/></label>
 <br/>
 <br/>
 <label>Shipping Address: <input type="text" name="shippingaddress" size="35" required/></label>
 
 <br/>
 <br/>
-<input type="submit" />
+
+<input id="submit" type="submit" />
+<input id="reset" type="reset" />
 
 
 

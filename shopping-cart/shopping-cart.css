@@ -1,5 +1,45 @@
-/*fieldset {
-	float:left;
-	width:25%;
+fieldset {
+	display: inline;
+	background-color: #FFF9A7;
 }
-*/
+
+
+input[type="reset"] {
+	border: solid red 2px;
+}
+#reset {
+	margin-left: 25%;
+	width: 7%;
+	height: 30px;
+}
+
+#submit {
+	width: 7%;
+	height: 30px;
+	border: solid green 2px;
+}
+
+#container {
+
+}
+
+input {
+	height:30px;
+}
+
+body {
+background-color: #DDFFD8;
+}
+
+#b {
+	margin-left: 85px;
+}
+
+#cvv {
+	margin-left: 60px;
+}
+
+#state {
+	margin-left: 80px;
+}
+

@@ -26,3 +26,7 @@ textarea {
 	font-family: monospace;
 	font-size: 12pt;
 }
+
+.big-font {
+	font-size:24px;
+}

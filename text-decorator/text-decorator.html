@@ -11,27 +11,27 @@
 		Please don't remove this link or change its URL; leave it as-is!
 		-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-		<script src="text-decorator.js" defer></script>
+		<script src="text-decorator.js" ></script>
 		<!-- link to your script file here -->
 		
 	</head>
 
 	<body>
-		<h1>Text Decorator</h1>
+		<h1 id="h">Text Decorator</h1>
 		
 		<div>
 			<img src="decorated.gif" alt="very decorated!" />
 		</div>
 		<fieldset>
 		<legend>Text</legend>
-		<textarea rows="4" cols ="30"></textarea>
+		<textarea id="textarea" rows="4" cols ="30" > Sample text1 &#10; Sample text2</textarea>
 		</fieldset>
 		<!-- Your UI controls go here -->
 		
 		<fieldset>
 		<legend>Decoration</legend>
-		<button type="button">Bigger Decorations!</button> <br/>
-		<input type="checkbox" name="vehicle" value="Car" checked> Bling<br/>
+		<button id="big-text-button" type="button">Bigger Decorations!</button> <br/>
+		<label id="blinglabel" for="bling" ><input id="bling" type="checkbox" name="bling"/>Bling<br/></label>
 		</fieldset>
 	</body>
 </html>

@@ -1,12 +1,9 @@
-var funcs = [];
-for (var i = 0; i < 5; i++) {
-	funcs[i] = helper(i);
-};
-function helper(m) {
-	return function() { return m; }
-}
-console.log(funcs[0]()); // 0
-console.log(funcs[1]()); // 1
-console.log(funcs[2]()); // 2
-console.log(funcs[3]()); // 3
-console.log(funcs[4]()); // 4 
+(function(x,y){
+ "use strict";
+ console.log(this);
+ console.log(x,y);
+ const obj = {x:2, foo:function(){console.log(this.x)}};
+ obj.foo();
+ obj.bar = () =>console.log(this.x);
+ obj.bar();
+})(5,7);
